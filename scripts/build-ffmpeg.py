@@ -319,7 +319,7 @@ def main():
         )
 
     ffmpeg_package.build_arguments = [
-        "--disable-alsa",
+        "--enable-alsa",
         "--disable-doc",
         # Disable experimental codecs
         "--disable-encoder=avui,dca,mlp,opus,s302m,sonic,sonic_ls,truehd,vorbis",
