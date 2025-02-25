@@ -56,6 +56,7 @@ jobs:
           CIBW_SKIP: "*musllinux*"
           CIBW_TEST_COMMAND: python -c "import dummy"
         run: |
+          sudo apt-get install libasound2-dev
           pip install cibuildwheel delvewheel
           cibuildwheel --output-dir output
           rm -f output/*.whl
